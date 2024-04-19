@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+<body> <!-- Criando Tabela -->
+
+    <!--
+        !!! RESUMO !!!
+        TABLE = Criar Tabela;
+        TR = Criar Linha (Row);
+        TH = Criar Cabeçalho (Header);
+        TD = Criar Dado (Data);
+        rowspan -> Row = Linha | Span = Espandir ||| rowspan = espandir linha;
+        colspan -> Col = Coluna | Span = Espandir ||| colspan = espandir coluna;
+    -->
+
+    <h1>Estudando Tabelas</h1> <!-- Colocando título -->
+    <table border="1">  <!--Tabela-->
+        <tr>    <!--Abertura linha da tabela-->
+            <th></th>           <!--Cabeçalho da Tabela VAZIO-->
+            <th>Cod</th>        <!--Cabeçalho da Tabela-->
+            <th>Produtos</th>   <!--Cabeçalho da Tabela-->
+            <th>Valor</th>      <!--Cabeçalho da Tabela-->
+        </tr>   <!--Fechamento da linha da tabela-->
+
+
+        <tr>    <!--Abertura linha da tabela-->
+            <th rowspan="4">Produtos</th>   <!--Inserindo dados (Row = Linha | Span = Espandir ||| rowspan = espandir linha)-->
+            <td>1</td>      <!--Inserindo dados-->
+            <td>Arroz</td>  <!--Inserindo dados-->
+            <td>R$5,00</td> <!--Inserindo dados-->
+        </tr>   <!--Fechamento da linha da tabela-->
+
+
+        <tr>    <!--Abertura linha da tabela-->
+            <td>2</td>      <!--Inserindo dados-->
+            <td>Feijão</td> <!--Inserindo dados-->
+            <td>R$3,00</td> <!--Inserindo dados-->
+        </tr>   <!--Fechamento da linha da tabela-->
+
+
+        <tr>    <!--Abertura linha da tabela-->
+            <td>3</td>      <!--Inserindo dados-->
+            <td>Salada</td> <!--Inserindo dados-->
+            <td>R$2,00</td> <!--Inserindo dados-->
+        </tr>   <!--Fechamento da linha da tabela-->
+
+
+        <tr>    <!--Abertura linha da tabela-->
+            <td>4</td>          <!--Inserindo dados-->
+            <td>Proteína</td>   <!--Inserindo dados-->
+            <td>R$10,00</td>    <!--Inserindo dados-->
+        </tr>   <!--Fechamento da linha da tabela-->
+
+
+        <tr>    <!--Abertura linha da tabela-->
+            <td></td>                   <!--Inserindo dado VAZIO-->
+            <td colspan="2">Total</td>  <!--Inserindo dados (Col = Coluna | Span = Espandir ||| colspan = espandir coluna)-->
+            <td>R$20,00</td>            <!--Inserindo dados-->
+        </tr>   <!--Fechamento da linha da tabela-->
+    </table>    <!--Fechamento da Tabela-->
+</body>
+</html>
