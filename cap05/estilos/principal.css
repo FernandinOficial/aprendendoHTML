@@ -1,32 +1,120 @@
 h1 {
-    color: #C0262C;
-	font-size: 2.5em; /* 40/16=2.5 */
-border-bottom: #C0262C solid thin;
-padding-bottom: 7px;
-
+  color: #c0262c;
+  font-size: 2.5em; /* 40/16=2.5 */
+  border-bottom: #c0262c solid thin;
+  padding-bottom: 7px;
 }
 
 h2 {
-    font-size: 1.75em; /* 28/16=1.75 */
+  font-size: 1.75em; /* 28/16=1.75 */
+  background: #c0262c url(../multimidia//back-bolinha.gif) repeat top center;   /*background imagem de bolinhas*/
+  color: #777;
+  letter-spacing: 0.1em;    /*espaçamento entre as letras*/
+  padding: 7px;     /*espaçamento interno*/
+  width: 316px;     /*largura do elemento*/
 }
 
-p { 	
-font-size: 1.1em; 	
-line-height: 1.3em; 	
-text-align: justify; 
+p {
+  font-size: 1.1em;
+  line-height: 1.3em;
+  text-align: justify;
 }
 
-p:first-line {
-font-size: 1.17em;
-font-variant: small-caps;
-font-weight: bolder;
-font-style: italic;
+p:first-line {  /*P primeira linha*/
+  font-size: 1.17em;
+  font-variant: small-caps;
+  font-weight: bolder;
+  font-style: italic;
 }
 
 hr {
-border-color: #C0262C;
+  border-color: #c0262c;
 }
 
-body { 	
-font-family: Helvetica, Arial, sans-serif; 
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/* página produtos - tabela */
+#produtos table {
+  width: 600px;
+  margin: 50px auto 30px;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+#produtos th,
+#produtos td {
+  border: #999 solid 1px;
+  padding: 5px;
+}
+
+table {
+  border-collapse: collapse;    /*faz com que a linha da tabela se "grude"*/
+}
+
+tr {
+  border-top: solid 3px #777;
+  border-bottom: solid 3px #777;
+}
+th,
+td {
+  padding: 7px;
+}
+
+#produtos caption {
+  background-color: #999;
+  color: #fff;
+  padding: 15px 0;
+  font-size: 1.5em;
+}
+#produtos td[colspan] {
+  font-style: italic;
+  font-weight: bold;
+  color: #999;
+}
+#produtos tr:hover {
+  background-color: #feff76;
+  font-weight: bolder;
+  font-style: italic;
+}
+
+/* página boletim - formulário */
+form{
+    background-color: #999;
+    margin: 30px 0;
+    padding: 20px;
+    border-radius: 0 15px;
+}
+input[type="submit"]{ /*selecionando o input submit "botao"*/
+    background-color: #C0262C;
+    background: linear-gradient(to bottom, #6b1516 0%,#c0262c 30%,#c0262c 70%,#6b1516 100%);    /*background direcionado de cima pra baixo*/
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2em;
+    color: #fff;
+    padding: 10px 30px;
+    margin: 20px 0;
+    text-shadow: 2px 2px 5px #000;  /*sombra do texto*/
+    cursor: pointer;
+}
+input#nome, input#email{
+    background-color: transparent;  /*background transparente*/
+    border: none;
+    border-bottom: #000 solid 1px;
+    font-size: 1.2em;
+    color: #fff;
+    width: 800px;
+}
+
+/*trabalhando com estilos em outros navegadores para garantir o mesmo estilo em todos*/
+::-webkit-input-placeholder{    /*  Chrome/Safari/Opera   */
+    color: #ddd;
+    font-style: italic;
+    font-size: .8em;
+}
+::-moz-placeholder{     /*  Firefox  */
+    color: #ddd;
+    font-style: italic;
+    font-size: .8em;
 }
