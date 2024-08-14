@@ -197,3 +197,39 @@ label{
 
   letter-spacing: .07em;
 }
+
+/* página quem somos */
+#quemSomos main img {
+  float: left;
+  margin: 0 20px 20px 0;
+  padding: 10px;
+  border: solid #C0262C thin;
+  background-color: #fff; /*sobrepor o <HR>*/
+}
+
+/* textos da área principal */
+
+body {
+  font-family: Helvetica, Arial, sans-serif;  /*tipo da familia fonte*/
+}
+main h1 { 
+  color: #C0262C;
+  font-size: 2.5em; /* 40/16=2.5em */
+  border-bottom: #C0262C solid thin;
+  padding-bottom: 7px;
+}
+main h2 {
+
+}
+main p {
+
+}
+main p:first-line {
+
+}
+main hr {
+
+}
+main h2+p:first-line {
+
+}
