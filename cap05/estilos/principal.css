@@ -2,37 +2,37 @@ h1 {
   color: #c0262c;
   font-size: 2.5em; /* 40/16=2.5 */
   border-bottom: #c0262c solid thin;
-  padding-bottom: 7px;
+  padding-bottom: 7px;  /*espaçamento interno da parte de baixo*/
 }
 
 h2 {
   font-size: 1.75em; /* 28/16=1.75 */
   background: #c0262c url(../multimidia//back-bolinha.gif) repeat top center;   /*background imagem de bolinhas*/
-  color: #777;
+  color: #fff;
   letter-spacing: 0.1em;    /*espaçamento entre as letras*/
   padding: 7px;     /*espaçamento interno*/
   width: 316px;     /*largura do elemento*/
 }
 
-p {
+p { /*paragrafo*/
   font-size: 1.1em;
-  line-height: 1.3em;
-  text-align: justify;
+  line-height: 1.3em; /*largura da linha*/
+  text-align: justify;  /*texto justificado*/
 }
 
 p:first-line {  /*P primeira linha*/
   font-size: 1.17em;
   font-variant: small-caps;
-  font-weight: bolder;
-  font-style: italic;
+  font-weight: bolder;  /*força da borda*/
+  font-style: italic; /*estilo da fonte*/
 }
 
-hr {
-  border-color: #c0262c;
+hr {  /*Régua Horizontal - Horizontal Rule*/
+  border-color: #c0262c;  /*cor da borda*/
 }
 
 body {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;  /*estilo do CORPO inteiro*/
 }
 
 /* página produtos - tabela */
@@ -43,7 +43,7 @@ body {
   border-collapse: collapse;
 }
 
-#produtos th,
+#produtos th,   /*especificidade de th e td*/
 #produtos td {
   border: #999 solid 1px;
   padding: 5px;
@@ -57,6 +57,7 @@ tr {
   border-top: solid 3px #777;
   border-bottom: solid 3px #777;
 }
+/*DOIS selecionados ao mesmo tempo*/
 th,
 td {
   padding: 7px;
@@ -68,12 +69,12 @@ td {
   padding: 15px 0;
   font-size: 1.5em;
 }
-#produtos td[colspan] {
+#produtos td[colspan] { /* selecionando somente td do tipo colspan */
   font-style: italic;
   font-weight: bold;
   color: #999;
 }
-#produtos tr:hover {
+#produtos tr:hover {  /*TR ao passar o cursor*/
   background-color: #feff76;
   font-weight: bolder;
   font-style: italic;
@@ -81,7 +82,7 @@ td {
 
 /* página boletim - formulário */
 form{
-    background-color: #999;
+    background-color: #999; /*cor do background*/
     margin: 30px 0;
     padding: 20px;
     border-radius: 0 15px;
@@ -109,12 +110,21 @@ input#nome, input#email{
 
 /*trabalhando com estilos em outros navegadores para garantir o mesmo estilo em todos*/
 ::-webkit-input-placeholder{    /*  Chrome/Safari/Opera   */
-    color: #ddd;
+    color: #ddd;  /* cor da fonte */
     font-style: italic;
     font-size: .8em;
 }
 ::-moz-placeholder{     /*  Firefox  */
-    color: #ddd;
+    color: #ddd;  /* cor da fonte */
     font-style: italic;
     font-size: .8em;
+}
+::-ms-input-placeholder{  /* IE */
+    color: #ddd;  /* cor da fonte */
+}
+label{
+  display: block; /*deixar em bloco*/
+  margin-top: 7px; /*distanciamento externo de cima*/
+  float: left;  /*flutuando à esquerda*/
+  width: 60px;  /*largura*/
 }
