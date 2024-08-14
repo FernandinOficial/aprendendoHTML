@@ -1,0 +1,26 @@
+body{
+    font-family: Helvetica, Arial, sans-serif;  /*estilo da fonte do body inteiro*/
+}
+h1 {
+    color: #c0262c; /*cor da fonte*/
+    font-size: 2.5em;   /*Converter 40/16=2.5em*/
+    border-bottom: #c0262c solid thin;  /*borda fina e solida com cor #c0262c*/
+    padding-bottom: 7px;    /*espaçamento interno*/
+}
+h2{
+    font-size: 1.75em;    /*Converter 28/16=1.75em*/
+}
+p{
+    font-size: 1.1em;   /*Converter em para px [resultado*16=medida em px]*/
+    line-height: 1.3em; /*20.8px*/
+    text-align: justify;    /*texto justificado*/
+}
+p:first-line{
+    font-size: 1.17em;  /*tamanho da fonte da primeira linha*/
+    font-variant: small-caps;   /*uma fonte variante*/
+    font-weight: bolder;    /*força da fonte*/
+    font-style: italic; /*estilo da fonte*/
+}
+hr{
+    border-color: #c0262c;  /*cor da borda*/
+}
