@@ -1,38 +1,56 @@
+/* estrutura */
+
+body {
+  width: 1000px;  /*largura do body*/
+  margin-left: auto;  /* deixar "responsivo" a grosso modo, pois depende do navegador*/
+  margin-left: auto;  /* deixar "responsivo" */
+}
+header h1 {
+  width: 240px; /*largura*/
+  float: left;  /*flutuação para esquerda*/
+  background-image: url(../multimidia/meu-amigo-cao-petshop-header.png);
+}
+
+  /*parado pagina 227*/
+
 h1 {
   color: #c0262c;
-  font-size: 2.5em; /* 40/16=2.5 */
+  font-size: 2.5em;   /* 40/16=2.5 */
   border-bottom: #c0262c solid thin;
   padding-bottom: 7px;  /*espaçamento interno da parte de baixo*/
 }
 
 h2 {
   font-size: 1.75em; /* 28/16=1.75 */
-  background: #c0262c url(../multimidia//back-bolinha.gif) repeat top center;   /*background imagem de bolinhas*/
+  background: #c0262c url(../multimidia//back-bolinha.gif) repeat top center; /*background imagem de bolinhas*/
   color: #fff;
-  letter-spacing: 0.1em;    /*espaçamento entre as letras*/
-  padding: 7px;     /*espaçamento interno*/
-  width: 316px;     /*largura do elemento*/
+  letter-spacing: 0.1em; /*espaçamento entre as letras*/
+  padding: 7px; /*espaçamento interno*/
+  width: 316px; /*largura do elemento*/
 }
 
-p { /*paragrafo*/
+p {
+  /*paragrafo*/
   font-size: 1.1em;
   line-height: 1.3em; /*largura da linha*/
-  text-align: justify;  /*texto justificado*/
+  text-align: justify; /*texto justificado*/
 }
 
-p:first-line {  /*P primeira linha*/
+p:first-line {
+  /*P primeira linha*/
   font-size: 1.17em;
   font-variant: small-caps;
-  font-weight: bolder;  /*força da borda*/
+  font-weight: bolder; /*força da borda*/
   font-style: italic; /*estilo da fonte*/
 }
 
-hr {  /*Régua Horizontal - Horizontal Rule*/
-  border-color: #c0262c;  /*cor da borda*/
+hr {
+  /*Régua Horizontal - Horizontal Rule*/
+  border-color: #c0262c; /*cor da borda*/
 }
 
 body {
-  font-family: Helvetica, Arial, sans-serif;  /*estilo do CORPO inteiro*/
+  font-family: Helvetica, Arial, sans-serif; /*estilo do CORPO inteiro*/
 }
 
 /* página produtos - tabela */
@@ -50,7 +68,7 @@ body {
 }
 
 table {
-  border-collapse: collapse;    /*faz com que a linha da tabela se "grude"*/
+  border-collapse: collapse; /*faz com que a linha da tabela se "grude"*/
 }
 
 tr {
@@ -69,90 +87,103 @@ td {
   padding: 15px 0;
   font-size: 1.5em;
 }
-#produtos td[colspan] { /* selecionando somente td do tipo colspan */
+#produtos td[colspan] {
+  /* selecionando somente td do tipo colspan */
   font-style: italic;
   font-weight: bold;
   color: #999;
 }
-#produtos tr:hover {  /*TR ao passar o cursor*/
+#produtos tr:hover {
+  /*TR ao passar o cursor*/
   background-color: #feff76;
   font-weight: bolder;
   font-style: italic;
 }
 
 /* página boletim - formulário */
-form{
-    background-color: #999; /*cor do background*/
-    margin: 30px 0;
-    padding: 20px;
-    border-radius: 0 15px;
+form {
+  background-color: #999; /*cor do background*/
+  margin: 30px 0;
+  padding: 20px;
+  border-radius: 0 15px;
 }
-input[type="submit"]{ /*selecionando o input submit "botao"*/
-    background-color: #C0262C;
-    background: linear-gradient(to bottom, #6b1516 0%,#c0262c 30%,#c0262c 70%,#6b1516 100%);    /*background direcionado de cima pra baixo*/
-    border: none;
-    border-radius: 30px;
-    font-size: 1.2em;
-    color: #fff;
-    padding: 10px 30px;
-    margin: 20px 0;
-    text-shadow: 2px 2px 5px #000;  /*sombra do texto*/
-    cursor: pointer;
+input[type="submit"] {
+  /*selecionando o input submit "botao"*/
+  background-color: #c0262c;
+  background: linear-gradient(
+    to bottom,
+    #6b1516 0%,
+    #c0262c 30%,
+    #c0262c 70%,
+    #6b1516 100%
+  ); /*background direcionado de cima pra baixo*/
+  border: none;
+  border-radius: 30px;
+  font-size: 1.2em;
+  color: #fff;
+  padding: 10px 30px;
+  margin: 20px 0;
+  text-shadow: 2px 2px 5px #000; /*sombra do texto*/
+  cursor: pointer;
 }
-input#nome, input#email{
-    background-color: transparent;  /*background transparente*/
-    border: none;
-    border-bottom: #000 solid 1px;
-    font-size: 1.2em;
-    color: #fff;
-    width: 800px;
+input#nome,
+input#email {
+  background-color: transparent; /*background transparente*/
+  border: none;
+  border-bottom: #000 solid 1px;
+  font-size: 1.2em;
+  color: #fff;
+  width: 800px;
 }
 
 /*trabalhando com estilos em outros navegadores para garantir o mesmo estilo em todos*/
-::-webkit-input-placeholder{    /*  Chrome/Safari/Opera   */
-    color: #ddd;  /* cor da fonte */
-    font-style: italic;
-    font-size: .8em;
+::-webkit-input-placeholder {
+  /*  Chrome/Safari/Opera   */
+  color: #ddd; /* cor da fonte */
+  font-style: italic;
+  font-size: 0.8em;
 }
-::-moz-placeholder{     /*  Firefox  */
-    color: #ddd;  /* cor da fonte */
-    font-style: italic;
-    font-size: .8em;
+::-moz-placeholder {
+  /*  Firefox  */
+  color: #ddd; /* cor da fonte */
+  font-style: italic;
+  font-size: 0.8em;
 }
-::-ms-input-placeholder{  /* IE */
-    color: #ddd;  /* cor da fonte */
+::-ms-input-placeholder {
+  /* IE */
+  color: #ddd; /* cor da fonte */
 }
-label{
+label {
   display: block; /*deixar em bloco*/
   margin-top: 7px; /*distanciamento externo de cima*/
-  float: left;  /*flutuando à esquerda*/
-  width: 60px;  /*largura*/
+  float: left; /*flutuando à esquerda*/
+  width: 60px; /*largura*/
 }
 
 /*banho e tosa*/
 
-#banhoEtosa fieldset{
+#banhoEtosa fieldset {
   background-color: #fff; /*cor do background*/
   border: none; /*sem borda*/
-  border-radius: 0 15px;  /*arredondamento da borda*/
-  margin-bottom: 20px;  /*espaçamento externo de baixo*/
+  border-radius: 0 15px; /*arredondamento da borda*/
+  margin-bottom: 20px; /*espaçamento externo de baixo*/
 }
-#banhoEtosa fieldset legend{
-  background-color: #c0262c;  /*cor de fundo*/
-  color: #fff;  /*cor da fonte*/
-  font-weight: bold;  /*força da fonte NEGRITO*/
-  letter-spacing: .05em;  /*espaçamento entre uma letra e outra*/
-  padding: 10px;  /*espaçamento interno de todos os lados*/
+#banhoEtosa fieldset legend {
+  background-color: #c0262c; /*cor de fundo*/
+  color: #fff; /*cor da fonte*/
+  font-weight: bold; /*força da fonte NEGRITO*/
+  letter-spacing: 0.05em; /*espaçamento entre uma letra e outra*/
+  padding: 10px; /*espaçamento interno de todos os lados*/
   margin-left: -13px; /*subtraindo 13px da margin indo para esquerda o elemento*/
 }
-#banhoEtosa fieldset label{
+#banhoEtosa fieldset label {
   display: block; /*display em bloco*/
   margin-top: 7px;
-  float: left;  /*flutuação para esquerda*/
+  float: left; /*flutuação para esquerda*/
   width: 115px; /*largura*/
 }
 #banhoEtosa fieldset input[type="text"],
-#banhoEtosa fieldset input[type="email"]{
+#banhoEtosa fieldset input[type="email"] {
   border: none; /*sem borda*/
   border-bottom: #000 solid 1px;
   font-size: 1.2em;
@@ -164,11 +195,13 @@ label{
   font-size: 1.2em; /*tamanho da fonte*/
   border: #000 solid 1px;
 }
-#banhoEtosa fieldset label.labelSimples{  /*especificidade para atribiur na classe 1,1,2*/
-  display: inline;  /*display em linha*/
+#banhoEtosa fieldset label.labelSimples {
+  /*especificidade para atribiur na classe 1,1,2*/
+  display: inline; /*display em linha*/
   float: none;
 }
-#banhoEtosa p { /*id banho do P*/
+#banhoEtosa p {
+  /*id banho do P*/
   text-align: left; /*texto alinhado para a esquerda*/
 }
 #banhoEtosa {
@@ -179,23 +212,23 @@ label{
 }
 /*POSTIT*/
 #banhoEtosa main h2 {
-  background: #FEF84F url(../multimidia/postit.jpg) no-repeat top left;
+  background: #fef84f url(../multimidia/postit.jpg) no-repeat top left;
   color: #000;
   padding: 35px;
   /* padding: 35px para cada um dos 4 lados
      tamanho do postit: 277x185
   */
-  
+
   width: 207px;
   /* 35+35=70 > 277-70=207 */
-  
+
   height: 115px;
   /* 35+35=70 > 185-70=115 */
 
   font-size: 1.3125em;
   /* 21/16=1.3125em */
 
-  letter-spacing: .07em;
+  letter-spacing: 0.07em;
 }
 
 /* página quem somos */
@@ -203,33 +236,41 @@ label{
   float: left;
   margin: 0 20px 20px 0;
   padding: 10px;
-  border: solid #C0262C thin;
+  border: solid #c0262c thin;
   background-color: #fff; /*sobrepor o <HR>*/
 }
 
 /* textos da área principal */
 
 body {
-  font-family: Helvetica, Arial, sans-serif;  /*tipo da familia fonte*/
+  font-family: Helvetica, Arial, sans-serif; /*tipo da familia fonte*/
 }
-main h1 { 
-  color: #C0262C;
+main h1 {
+  color: #c0262c;
   font-size: 2.5em; /* 40/16=2.5em */
-  border-bottom: #C0262C solid thin;
+  border-bottom: #c0262c solid thin;
   padding-bottom: 7px;
 }
 main h2 {
-
+  font-size: 1.75em;  /* 28/16=1.75em */
+  background: #C0262C url(../multimidia/back-bolinha.gif) repeat top center;
+  color: #fff;
+  letter-spacing: .1em; /* espaçamento entre cada letra */
+  padding: 7px;
+  width: 316px;
 }
 main p {
-
+  font-size: 1.1em;
+  line-height: 1.3em; /* altura da linha */
+  text-align: justify;
 }
 main p:first-line {
-
+  font-size: 1.17em;
+  font-variant: small-caps; /* fonte variante */
+  font-weight: bolder;
+  font-style: italic;
 }
 main hr {
-
+  border-color: #C0262C;
 }
-main h2+p:first-line {
 
-}
