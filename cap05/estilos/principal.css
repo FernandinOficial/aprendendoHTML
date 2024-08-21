@@ -1,23 +1,142 @@
 /* estrutura */
-
+/* CONTINUARA AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA pg 247  */
 body {
-  width: 1000px;  /*largura do body*/
-  margin-left: auto;  /* deixar "responsivo" a grosso modo, pois depende do navegador*/
-  margin-left: auto;  /* deixar "responsivo" */
+  width: 1100px; /*largura do body*/
+  margin-left: auto; /* deixar "responsivo" a grosso modo, pois depende do navegador*/
+  margin-right: auto; /* deixar "responsivo" */
 }
 header h1 {
   width: 240px; /*largura*/
-  float: left;  /*flutuação para esquerda*/
+  float: left; /*flutuação para esquerda*/
   background-image: url(../multimidia/meu-amigo-cao-petshop-header.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 200px;
+  text-indent: -1000px; /*movimentar o texto para sumir da tela*/
+  border-bottom: 0px;
 }
 
-  /*parado pagina 227*/
+header #anuncio {
+  width: 510px;
+  float: left; /*flutuante*/
+  margin: 80px auto auto;
+  padding-top: 0px;
+}
+header section {
+  padding-top: 70px;
+}
+header section a[href="boletim.html"] {
+  /*pegando de referencia o <A> de hipertexto para edição*/
+  border: solid #c0262c;
+  padding: 15px;
+  border-radius: 15px;
+  color: #c0262c;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+header section p {
+  color: #999999;
+  margin: 33px auto 7px;
+}
+header section figure {
+  width: 100%;
+  margin: 0px;
+}
+header section figure a {
+  padding: 25px 5px 0;
+  border: none;
+}
+header section figure a:first-child {
+  padding: 25px 5px 0 0;
+}
+header section figure a:last-child {
+  padding: 25px 0 0 5px;
+}
+/* Estrutura de navegação */
+nav {
+  background-color: #000;
+  overflow: auto; /*colocar fundo e deixar abaixo*/
+  clear: both;
+  margin-top: 10px;
+}
+nav ul {
+  list-style: none;
+  padding-left: 0px;
+  margin-top: 1px;
+}
+nav ul li { /*alinhar em uma so reta*/
+  float: left;
+}
+nav ul a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.23em;
+  padding: 8px 50px;
+  line-height: 2em;
+}
+#inicial a[href="index.html"],
+#quemSomos a[href="quem-somos.html"],
+#produtos a[href="produtos.html"],
+#banhoEtosa a[href="banho-e-tosa.html"],
+#curiosidades a[href="curiosidade.html"]{
+  background-color: #c0262c;
+}
+/* página obrigado */
+#obrigado main p img {
+  float: left;
+  margin: 0 20px 20px 0;
+  padding: 10px;
+  border: solid #c0262c thin;
+  background-color: #fff;
+}
+#destaqueObrigado{
+  position: relative;
+  border: solid #c0262c 1px;
+  padding: 5px 25px;
+  margin: 20px 0;
+}
+#obrigado #lacinho {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  /* em navegadores diferentes */
+  -webkit-transform: rotate(30deg);
+  -moz-transform:  rotate(30deg);
+  -ms-transform:  rotate(30deg);
+  -o-transform:  rotate(30deg);
+  transform:  rotate(30deg);
+}
+
+/* estrutura página inicial */
+#inicial aside {
+  width: 230px;
+  float: left;
+  margin-top: 30px;
+}
+#inicial main {
+  width: 490px;
+  float: left;
+  margin: 30px 25px 10px;
+}
+
+/* rodapé */
+footer {
+  clear: both;  /*limpou indo para baixo*/
+  border-top: 7px solid #999;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+footer p {
+  margin: 0px;
+}
 
 h1 {
   color: #c0262c;
-  font-size: 2.5em;   /* 40/16=2.5 */
+  font-size: 2.5em; /* 40/16=2.5 */
   border-bottom: #c0262c solid thin;
-  padding-bottom: 7px;  /*espaçamento interno da parte de baixo*/
+  padding-bottom: 7px; /*espaçamento interno da parte de baixo*/
 }
 
 h2 {
@@ -252,10 +371,10 @@ main h1 {
   padding-bottom: 7px;
 }
 main h2 {
-  font-size: 1.75em;  /* 28/16=1.75em */
-  background: #C0262C url(../multimidia/back-bolinha.gif) repeat top center;
+  font-size: 1.75em; /* 28/16=1.75em */
+  background: #c0262c url(../multimidia/back-bolinha.gif) repeat top center;
   color: #fff;
-  letter-spacing: .1em; /* espaçamento entre cada letra */
+  letter-spacing: 0.1em; /* espaçamento entre cada letra */
   padding: 7px;
   width: 316px;
 }
@@ -271,6 +390,5 @@ main p:first-line {
   font-style: italic;
 }
 main hr {
-  border-color: #C0262C;
+  border-color: #c0262c;
 }
-
