@@ -1,5 +1,5 @@
 /* estrutura */
-/* CONTINUARA AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA pg 247  */
+/* CONTINUARA AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA pg 248  */
 body {
   width: 1100px; /*largura do body*/
   margin-left: auto; /* deixar "responsivo" a grosso modo, pois depende do navegador*/
@@ -78,7 +78,7 @@ nav ul a {
 #quemSomos a[href="quem-somos.html"],
 #produtos a[href="produtos.html"],
 #banhoEtosa a[href="banho-e-tosa.html"],
-#curiosidades a[href="curiosidade.html"]{
+#curiosidades a[href="curiosidades.html"]{
   background-color: #c0262c;
 }
 /* página obrigado */
@@ -118,7 +118,50 @@ nav ul a {
   float: left;
   margin: 30px 25px 10px;
 }
-
+/* transição em caixas - 3caixas de 163x230 */
+.anuncioAnime {
+  margin: 0 0 10px;
+  padding: 0;
+  overflow: auto;
+}
+.anuncioAnime .boxAnuncio {
+  width: 163px;
+  height: 230px;
+  border-bottom: solid thin #c0262c;
+  float: left;
+  position: relative;
+  overflow: hidden;  /*esconder o texto*/
+}
+.anuncioAnime .boxAnuncio p {
+  text-align: center;
+  font-size: .95em;
+  line-height: 1.3em;
+  background-color: rgba(255, 255, 255, 1);
+  border-left: solid thin #c0262c;
+  border-right: solid thin #c0262c;
+  margin: 0;
+  padding: 7px 15px;
+  position: absolute;
+  bottom: -80px;
+  left: 0;
+  transition: 1s linear 0.1s; /*animação simples*/
+  cursor: default;
+}
+.anuncioAnime.boxAnuncio p:first-line{
+  font-size: 1.1em;
+  font-variant: inherit;
+  font-style: normal;
+  font-weight: bolder;
+  color: #c0262c;
+  padding: 0;
+}
+.anuncioAnime .boxAnuncio p:hover {
+  background-color: rgba(255 255, 255, 0.7);
+}
+/* controle de video */
+aside video {
+  width: 230px;
+}
 /* rodapé */
 footer {
   clear: both;  /*limpou indo para baixo*/
