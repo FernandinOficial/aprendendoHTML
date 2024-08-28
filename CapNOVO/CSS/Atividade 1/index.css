@@ -25,3 +25,10 @@ li > p{
 h1 {
     color: #12787c;
 }
+/* alterações */
+h1 + h2 {
+    color: red;
+}
+.input:checked {
+    background-color: aliceblue;
+}
